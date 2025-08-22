@@ -40,7 +40,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 8px;
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
 }
@@ -99,16 +99,16 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px 10px;
+  padding: 15px 8px;
 }
 
 .header {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .logo {
-  font-size: 60px;
-  margin-bottom: 16px;
+  font-size: 55px;
+  margin-bottom: 12px;
   animation: bounce 2s infinite;
 }
 
@@ -125,22 +125,22 @@ body {
 }
 
 .title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   color: white;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .subtitle {
-  font-size: 14px;
+  font-size: 13px;
   color: rgba(255, 255, 255, 0.9);
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .start-btn-wrapper {
   width: 100%;
-  max-width: 240px;
+  max-width: 220px;
 }
 
 /* 游戏界面 */
@@ -156,9 +156,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;
+  padding: 8px 12px;
   background: white;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
 }
 
@@ -170,14 +170,14 @@ body {
 }
 
 .status-label {
-  font-size: 11px;
-  color: #888;
-  margin-bottom: 2px;
+  font-size: 10px;
+  color: #999;
+  margin-bottom: 1px;
   font-weight: 500;
 }
 
 .status-value {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: #333;
 }
@@ -188,49 +188,49 @@ body {
 
 /* 问题区域 */
 .question-section {
-  padding: 16px 15px;
+  padding: 12px 12px;
   background: white;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   flex-shrink: 0;
 }
 
 .question-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #333;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .station-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 /* 东京地铁风格圆环图标 */
 .station-icon {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   background: white;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
 }
 
 .station-icon::before {
   content: '';
   position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
   border-radius: 50%;
   background: white;
   z-index: 1;
@@ -257,20 +257,20 @@ body {
   z-index: 2;
   background: var(--line-color);
   color: white;
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 /* 选项区域 */
 .options-section {
   flex: 1;
-  padding: 0 15px;
+  padding: 0 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,21 +279,21 @@ body {
 .options-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .option-btn {
-  padding: 14px 20px;
-  font-size: 15px;
+  padding: 12px 18px;
+  font-size: 14px;
   font-weight: 500;
-  border: 1px solid #e1e5e9;
-  border-radius: 10px;
+  border: 1px solid #e5e9ec;
+  border-radius: 8px;
   background: white;
   color: #333;
   cursor: pointer;
   transition: all 0.2s ease;
   text-align: left;
-  min-height: 52px;
+  min-height: 48px;
   display: flex;
   align-items: center;
   position: relative;
@@ -313,32 +313,32 @@ body {
   border-color: #667eea;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  box-shadow: 0 6px 18px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.25);
 }
 
 .option-btn.correct {
   border-color: #27ae60;
   background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
   color: white;
-  box-shadow: 0 6px 18px rgba(39, 174, 96, 0.3);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.25);
 }
 
 .option-btn.wrong {
   border-color: #e74c3c;
   background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
   color: white;
-  box-shadow: 0 6px 18px rgba(231, 76, 60, 0.3);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.25);
 }
 
 /* 反馈区域 */
 .feedback-area {
-  padding: 12px 15px;
+  padding: 10px 12px;
   background: white;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
-  min-height: 48px;
+  min-height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,7 +347,7 @@ body {
 
 /* 下一题按钮 */
 .next-btn-wrapper {
-  padding: 12px 15px;
+  padding: 10px 12px;
   background: white;
   flex-shrink: 0;
 }
@@ -363,16 +363,16 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px 10px;
+  padding: 15px 8px;
 }
 
 .result-header {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .result-icon {
-  font-size: 60px;
-  margin-bottom: 16px;
+  font-size: 55px;
+  margin-bottom: 12px;
   animation: celebrate 1s ease-in-out;
 }
 
@@ -383,14 +383,14 @@ body {
 }
 
 .result-title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .score-section {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .score-display {
@@ -400,52 +400,186 @@ body {
 }
 
 .score-label {
-  font-size: 14px;
+  font-size: 13px;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .score-value-wrapper {
   display: flex;
   align-items: baseline;
-  gap: 6px;
+  gap: 4px;
 }
 
 .score-value {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 700;
   color: #ffd700;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .score-unit {
-  font-size: 18px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .restart-btn-wrapper {
   width: 100%;
-  max-width: 240px;
+  max-width: 220px;
 }
 
 /* 响应式适配 */
 @media (max-width: 375px) {
   .page-content {
-    padding: 10px 5px;
+    padding: 8px 5px;
   }
 
   #start-screen .page-content,
   #end-screen .page-content {
-    padding: 15px 10px;
+    padding: 10px 8px;
   }
 
   .header {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .logo {
-    font-size: 50px;
-    margin-bottom: 12px;
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 11px;
+  }
+
+  .start-btn-wrapper,
+  .restart-btn-wrapper {
+    max-width: 180px;
+  }
+
+  .status-bar {
+    padding: 6px 8px;
+  }
+
+  .status-label {
+    font-size: 9px;
+  }
+
+  .status-value {
+    font-size: 14px;
+  }
+
+  .question-section {
+    padding: 10px 8px;
+    margin-bottom: 4px;
+  }
+
+  .question-title {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .station-icons {
+    gap: 6px;
+  }
+
+  .station-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .station-icon span {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+  }
+
+  .options-section {
+    padding: 0 8px;
+  }
+
+  .options-list {
+    gap: 6px;
+  }
+
+  .option-btn {
+    padding: 8px 12px;
+    font-size: 13px;
+    min-height: 40px;
+  }
+
+  .feedback-area {
+    padding: 8px 8px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    min-height: 36px;
+  }
+
+  .next-btn-wrapper {
+    padding: 8px;
+  }
+
+  .result-header {
+    margin-bottom: 15px;
+  }
+
+  .result-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+
+  .result-title {
+    font-size: 16px;
+  }
+
+  .score-section {
+    margin-bottom: 20px;
+  }
+
+  .score-label {
+    font-size: 11px;
+  }
+
+  .score-value-wrapper {
+    gap: 3px;
+  }
+
+  .score-value {
+    font-size: 28px;
+  }
+
+  .score-unit {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    min-height: 40px;
+  }
+}
+
+@media (max-height: 550px) and (min-width: 376px) {
+  .page-content {
+    padding: 8px;
+  }
+
+  #start-screen .page-content,
+  #end-screen .page-content {
+    padding: 15px 8px;
+  }
+
+  .header {
+    margin-bottom: 25px;
+  }
+
+  .logo {
+    font-size: 45px;
+    margin-bottom: 10px;
   }
 
   .title {
@@ -462,11 +596,11 @@ body {
   }
 
   .status-bar {
-    padding: 8px 10px;
+    padding: 6px 12px;
   }
 
   .status-label {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .status-value {
@@ -474,13 +608,13 @@ body {
   }
 
   .question-section {
-    padding: 12px 10px;
+    padding: 10px 12px;
     margin-bottom: 6px;
   }
 
   .question-title {
     font-size: 16px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .station-icons {
@@ -499,28 +633,28 @@ body {
   }
 
   .options-section {
-    padding: 0 10px;
+    padding: 0 12px;
   }
 
   .options-list {
-    gap: 8px;
+    gap: 6px;
   }
 
   .option-btn {
     padding: 10px 15px;
     font-size: 14px;
-    min-height: 48px;
+    min-height: 44px;
   }
 
   .feedback-area {
-    padding: 10px 10px;
+    padding: 8px 12px;
     margin-bottom: 6px;
     font-size: 14px;
     min-height: 40px;
   }
 
   .next-btn-wrapper {
-    padding: 10px;
+    padding: 8px 12px;
   }
 
   .result-header {
@@ -528,8 +662,8 @@ body {
   }
 
   .result-icon {
-    font-size: 50px;
-    margin-bottom: 12px;
+    font-size: 45px;
+    margin-bottom: 10px;
   }
 
   .result-title {
@@ -537,11 +671,11 @@ body {
   }
 
   .score-section {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .score-label {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .score-value-wrapper {
@@ -553,178 +687,44 @@ body {
   }
 
   .score-unit {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .btn {
-    padding: 12px 24px;
+    padding: 10px 24px;
     font-size: 15px;
-    min-height: 44px;
-  }
-}
-
-@media (max-height: 600px) and (min-width: 376px) {
-  .page-content {
-    padding: 10px;
-  }
-
-  #start-screen .page-content,
-  #end-screen .page-content {
-    padding: 20px 10px;
-  }
-
-  .header {
-    margin-bottom: 30px;
-  }
-
-  .logo {
-    font-size: 50px;
-    margin-bottom: 12px;
-  }
-
-  .title {
-    font-size: 20px;
-  }
-
-  .subtitle {
-    font-size: 12px;
-  }
-
-  .start-btn-wrapper,
-  .restart-btn-wrapper {
-    max-width: 220px;
-  }
-
-  .status-bar {
-    padding: 8px 15px;
-  }
-
-  .status-label {
-    font-size: 10px;
-  }
-
-  .status-value {
-    font-size: 16px;
-  }
-
-  .question-section {
-    padding: 12px 15px;
-    margin-bottom: 8px;
-  }
-
-  .question-title {
-    font-size: 18px;
-    margin-bottom: 12px;
-  }
-
-  .station-icons {
-    gap: 10px;
-  }
-
-  .station-icon {
-    width: 45px;
-    height: 45px;
-  }
-
-  .station-icon span {
-    width: 32px;
-    height: 32px;
-    font-size: 14px;
-  }
-
-  .options-section {
-    padding: 0 15px;
-  }
-
-  .options-list {
-    gap: 8px;
-  }
-
-  .option-btn {
-    padding: 12px 18px;
-    font-size: 14px;
-    min-height: 48px;
-  }
-
-  .feedback-area {
-    padding: 10px 15px;
-    margin-bottom: 8px;
-    font-size: 14px;
-    min-height: 44px;
-  }
-
-  .next-btn-wrapper {
-    padding: 10px 15px;
-  }
-
-  .result-header {
-    margin-bottom: 25px;
-  }
-
-  .result-icon {
-    font-size: 50px;
-    margin-bottom: 12px;
-  }
-
-  .result-title {
-    font-size: 20px;
-  }
-
-  .score-section {
-    margin-bottom: 30px;
-  }
-
-  .score-label {
-    font-size: 12px;
-  }
-
-  .score-value-wrapper {
-    gap: 6px;
-  }
-
-  .score-value {
-    font-size: 36px;
-  }
-
-  .score-unit {
-    font-size: 16px;
-  }
-
-  .btn {
-    padding: 12px 28px;
-    font-size: 16px;
-    min-height: 44px;
+    min-height: 40px;
   }
 }
 
 /* 安全区域适配 */
 @supports (padding: max(0px)) {
   .page-content {
-    padding-left: max(10px, env(safe-area-inset-left));
-    padding-right: max(10px, env(safe-area-inset-right));
-    padding-top: max(10px, env(safe-area-inset-top));
-    padding-bottom: max(10px, env(safe-area-inset-bottom));
+    padding-left: max(8px, env(safe-area-inset-left));
+    padding-right: max(8px, env(safe-area-inset-right));
+    padding-top: max(8px, env(safe-area-inset-top));
+    padding-bottom: max(8px, env(safe-area-inset-bottom));
   }
   
   #start-screen .page-content,
   #end-screen .page-content {
-    padding-left: max(10px, env(safe-area-inset-left));
-    padding-right: max(10px, env(safe-area-inset-right));
-    padding-top: max(20px, env(safe-area-inset-top));
-    padding-bottom: max(20px, env(safe-area-inset-bottom));
+    padding-left: max(8px, env(safe-area-inset-left));
+    padding-right: max(8px, env(safe-area-inset-right));
+    padding-top: max(15px, env(safe-area-inset-top));
+    padding-bottom: max(15px, env(safe-area-inset-bottom));
   }
 
   .status-bar {
-    padding-left: max(15px, env(safe-area-inset-left));
-    padding-right: max(15px, env(safe-area-inset-right));
-    padding-top: max(10px, env(safe-area-inset-top));
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-top: max(8px, env(safe-area-inset-top));
   }
   
   .question-section,
   .options-section,
   .feedback-area,
   .next-btn-wrapper {
-    padding-left: max(15px, env(safe-area-inset-left));
-    padding-right: max(15px, env(safe-area-inset-right));
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
   }
 }

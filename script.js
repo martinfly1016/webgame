@@ -39,13 +39,57 @@ function nextQuestion() {
   startTimer();
 }
 
+// 检查两个站点是否有相同的换乘线码
+function hasCommonCodes(station1, station2) {
+  if (!station1.codes || !station2.codes) return false;
+  return station1.codes.some(code => station2.codes.includes(code));
+}
+
 function generateQuestion() {
-  const station = stations[Math.floor(Math.random() * stations.length)];
-  const options = [station];
-  while (options.length < 4) {
-    const rand = stations[Math.floor(Math.random() * stations.length)];
-    if (!options.includes(rand)) options.push(rand);
+  // 只从有换乘线的站点中选择（codes数组不为空）
+  const stationsWithCodes = stations.filter(s => s.codes && s.codes.length > 0);
+  if (stationsWithCodes.length === 0) {
+    console.error('没有找到有换乘线的站点');
+    return null;
   }
+  
+  const station = stationsWithCodes[Math.floor(Math.random() * stationsWithCodes.length)];
+  const options = [station];
+  
+  // 创建候选站点列表，排除与正确答案有相同换乘线码的站点
+  const candidateStations = stations.filter(s => 
+    s !== station && !hasCommonCodes(station, s)
+  );
+  
+  // 如果候选站点不足3个，放宽条件允许没有换乘线的站点
+  if (candidateStations.length < 3) {
+    console.warn('候选站点不足，添加没有换乘线的站点作为选项');
+    const noCodeStations = stations.filter(s => 
+      s !== station && (!s.codes || s.codes.length === 0)
+    );
+    candidateStations.push(...noCodeStations);
+  }
+  
+  // 如果仍然不足，则从所有站点中选择（排除正确答案和已有相同换乘线的）
+  while (options.length < 4 && candidateStations.length > 0) {
+    const randomIndex = Math.floor(Math.random() * candidateStations.length);
+    const rand = candidateStations[randomIndex];
+    if (!options.includes(rand)) {
+      options.push(rand);
+      candidateStations.splice(randomIndex, 1); // 移除已选择的站点
+    }
+  }
+  
+  // 最后的容错：如果还是不够4个选项，从所有站点中补充
+  if (options.length < 4) {
+    while (options.length < 4) {
+      const rand = stations[Math.floor(Math.random() * stations.length)];
+      if (!options.includes(rand)) {
+        options.push(rand);
+      }
+    }
+  }
+  
   shuffle(options);
   return { station, options, correct: options.indexOf(station) };
 }

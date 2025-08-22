@@ -55,15 +55,15 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 28px;
-  font-size: 16px;
+  padding: 16px 32px;
+  font-size: 18px;
   font-weight: 600;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
-  min-height: 48px;
+  min-height: 56px;
   width: 100%;
   max-width: 280px;
   margin: 0 auto;
@@ -207,11 +207,11 @@ body {
 }
 
 .question-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: #2c3e50;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   line-height: 1.4;
 }
 
@@ -227,14 +227,14 @@ body {
 /* 东京地铁风格圆环图标 - 更接近真实样式 */
 .station-icon {
   position: relative;
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   background: white;
-  border: 3px solid var(--line-color);
+  border: 3.5px solid var(--line-color);
   transition: transform 0.2s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -246,7 +246,7 @@ body {
 .station-icon span {
   color: #1a1a1a;
   font-weight: 800;
-  font-size: 16px;
+  font-size: 19px;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   letter-spacing: -0.5px;
 }
@@ -266,8 +266,8 @@ body {
 }
 
 .option-btn {
-  padding: 14px 18px;
-  font-size: 16px;
+  padding: 18px 20px;
+  font-size: 20px;
   font-weight: 500;
   border: 2px solid #e8ecf0;
   border-radius: 12px;
@@ -276,7 +276,7 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
   text-align: left;
-  min-height: 52px;
+  min-height: 64px;
   display: flex;
   align-items: center;
   position: relative;
@@ -332,14 +332,14 @@ body {
 
 /* 反馈区域 */
 .feedback-area {
-  padding: 8px 20px;
+  padding: 12px 20px;
   background: white;
   margin-top: auto;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
-  min-height: 36px;
+  min-height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,9 +359,9 @@ body {
   width: 100%;
   max-width: none;
   margin: 0;
-  padding: 14px 24px;
-  font-size: 16px;
-  min-height: 48px;
+  padding: 18px 28px;
+  font-size: 20px;
+  min-height: 60px;
   border-radius: 12px;
 }
 
@@ -446,8 +446,8 @@ body {
   max-width: 280px;
 }
 
-/* 响应式适配 */
-@media (max-width: 375px) {
+/* 响应式适配 - 优化移动端显示 */
+@media (max-width: 768px) {
   .page-content {
     padding: 15px;
   }
@@ -458,121 +458,153 @@ body {
   }
 
   .header {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
 
   .logo {
-    font-size: 56px;
-    margin-bottom: 15px;
+    font-size: 64px;
+    margin-bottom: 20px;
   }
 
   .title {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  .subtitle {
-    font-size: 14px;
-  }
-
-  .status-bar {
-    padding: 10px 15px;
-  }
-
-  .status-label {
-    font-size: 11px;
-  }
-
-  .status-value {
-    font-size: 18px;
-  }
-
-  .question-section {
-    padding: 15px;
-    margin-bottom: 10px;
-  }
-
-  .question-title {
-    font-size: 16px;
+    font-size: 26px;
     margin-bottom: 12px;
   }
 
-  .station-icons {
-    gap: 10px;
-  }
-
-  .station-icon {
-    width: 38px;
-    height: 38px;
-    border-width: 2.5px;
-  }
-
-  .station-icon span {
-    font-size: 14px;
-  }
-
-  .options-section {
-    padding: 6px 15px 12px;
-  }
-
-  .options-list {
-    gap: 8px;
-  }
-
-  .option-btn {
-    padding: 12px 14px;
-    font-size: 15px;
-    min-height: 46px;
-  }
-
-  .feedback-area {
-    padding: 6px 15px;
-    margin-bottom: 6px;
-    font-size: 15px;
-    min-height: 32px;
-  }
-
-  .next-btn-wrapper {
-    padding: 6px 15px 12px;
-  }
-
-  .next-button {
-    padding: 12px 20px;
-    font-size: 15px;
-    min-height: 44px;
-  }
-
-  .result-icon {
-    font-size: 56px;
-    margin-bottom: 15px;
-  }
-
-  .result-title {
-    font-size: 24px;
-  }
-
-  .score-section {
-    margin-bottom: 30px;
-    padding: 15px;
-  }
-
-  .score-label {
-    font-size: 12px;
-    margin-bottom: 6px;
-  }
-
-  .score-value {
-    font-size: 40px;
-  }
-
-  .score-unit {
+  .subtitle {
     font-size: 16px;
   }
 
-  .btn {
-    padding: 12px 24px;
-    font-size: 15px;
+  .status-bar {
+    padding: 12px 15px;
+  }
+
+  .status-label {
+    font-size: 13px;
+  }
+
+  .status-value {
+    font-size: 22px;
+  }
+
+  .question-section {
+    padding: 18px 15px;
+    margin-bottom: 12px;
+  }
+
+  .question-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .station-icons {
+    gap: 12px;
+  }
+
+  .station-icon {
+    width: 46px;
+    height: 46px;
+    border-width: 3px;
+  }
+
+  .station-icon span {
+    font-size: 18px;
+  }
+
+  .options-section {
+    padding: 10px 15px 16px;
+  }
+
+  .options-list {
+    gap: 12px;
+  }
+
+  .option-btn {
+    padding: 18px 18px;
+    font-size: 19px;
+    min-height: 60px;
+  }
+
+  .feedback-area {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    font-size: 19px;
     min-height: 44px;
+  }
+
+  .next-btn-wrapper {
+    padding: 10px 15px 16px;
+  }
+
+  .next-button {
+    padding: 16px 24px;
+    font-size: 19px;
+    min-height: 56px;
+  }
+
+  .result-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+  }
+
+  .result-title {
+    font-size: 26px;
+  }
+
+  .score-section {
+    margin-bottom: 35px;
+    padding: 20px;
+  }
+
+  .score-label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .score-value {
+    font-size: 44px;
+  }
+
+  .score-unit {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 16px 28px;
+    font-size: 18px;
+    min-height: 52px;
+  }
+}
+
+/* 小屏幕手机特殊适配 */
+@media (max-width: 375px) {
+  .question-title {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  
+  .station-icon {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .station-icon span {
+    font-size: 17px;
+  }
+  
+  .option-btn {
+    padding: 16px 16px;
+    font-size: 18px;
+    min-height: 56px;
+  }
+  
+  .feedback-area {
+    font-size: 18px;
+  }
+  
+  .next-button {
+    font-size: 18px;
+    min-height: 52px;
   }
 }
 

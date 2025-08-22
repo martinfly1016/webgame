@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tokyo Metro Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="start-screen">
+    <h1>Tokyo Metro Quiz</h1>
+    <button id="start-btn">Start Game</button>
+  </div>
+
+  <div id="game" class="hidden">
+    <div id="timer">10</div>
+    <div id="progress"></div>
+    <p id="question-text">以上换乘站对应的地铁站是下面哪一项（单选）</p>
+    <div id="icons" class="icons"></div>
+    <div id="options" class="options"></div>
+    <div id="feedback"></div>
+  </div>
+
+  <div id="end-screen" class="hidden">
+    <h2>Your score: <span id="score"></span></h2>
+    <button id="restart-btn">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

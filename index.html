@@ -1,63 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
-  <title>Tokyo Metro Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>东京地铁换乘站识别</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="start-screen" class="screen">
-    <div class="screen-content">
-      <div class="logo-container">
-        <div class="metro-logo">🚇</div>
-        <h1 class="game-title">东京地铁换乘站识别游戏</h1>
-        <p class="game-description">测试您对东京地铁换乘站标识的熟悉程度</p>
+  <!-- 开始界面 -->
+  <div id="start-screen" class="page">
+    <div class="page-content">
+      <div class="header">
+        <div class="logo">🚇</div>
+        <h1 class="title">东京地铁换乘站识别</h1>
+        <p class="subtitle">测试您对东京地铁换乘站标识的熟悉程度</p>
       </div>
-      <button id="start-btn" class="primary-button">开始游戏</button>
+      <div class="start-btn-wrapper">
+        <button id="start-btn" class="btn btn-primary">开始游戏</button>
+      </div>
     </div>
   </div>
 
-  <div id="game" class="hidden">
-    <div class="game-header">
-      <div class="timer-container">
-        <div class="timer-label">剩余时间</div>
-        <div id="timer" class="timer">10</div>
+  <!-- 游戏界面 -->
+  <div id="game" class="page hidden">
+    <!-- 顶部状态栏 -->
+    <div class="status-bar">
+      <div class="status-item">
+        <span class="status-label">时间</span>
+        <span id="timer" class="status-value timer">10</span>
       </div>
-      <div class="progress-container">
-        <div class="progress-label">进度</div>
-        <div id="progress" class="progress">1/10</div>
+      <div class="status-item">
+        <span class="status-label">进度</span>
+        <span id="progress" class="status-value">1/10</span>
       </div>
     </div>
-    
-    <div class="question-container">
-      <h2 class="question-title">东京地铁换乘站识别</h2>
-      <p id="question-text" class="question-text">请根据以下换乘站标识，选择对应的地铁站名称</p>
+
+    <!-- 问题区域 -->
+    <div class="question-section">
+      <h2 class="question-title">请识别以下换乘站</h2>
+      <div id="icons" class="station-icons"></div>
     </div>
-    
-    <div class="station-icons-container">
-      <div id="icons" class="icons"></div>
+
+    <!-- 选项区域 -->
+    <div class="options-section">
+      <div id="options" class="options-list"></div>
     </div>
-    
-    <div class="options-container">
-      <div id="options" class="options"></div>
+
+    <!-- 反馈区域 -->
+    <div id="feedback" class="feedback-area"></div>
+
+    <!-- 下一题按钮 -->
+    <div class="next-btn-wrapper">
+      <button id="next-btn" class="btn btn-success next-button" style="display: none;">下一题</button>
     </div>
-    
-    <div id="feedback" class="feedback" aria-live="polite"></div>
   </div>
 
-  <div id="end-screen" class="screen hidden">
-    <div class="screen-content">
-      <div class="result-container">
+  <!-- 结束界面 -->
+  <div id="end-screen" class="page hidden">
+    <div class="page-content">
+      <div class="result-header">
         <div class="result-icon">🎉</div>
         <h2 class="result-title">游戏结束</h2>
-        <div class="score-display">
-          <span class="score-label">您的得分：</span>
-          <span id="score" class="score-value">0</span>
-          <span class="score-unit">分</span>
-        </div>
-        <p class="result-message">感谢您参与东京地铁换乘站识别游戏！</p>
       </div>
-      <button id="restart-btn" class="primary-button">重新开始</button>
+      <div class="score-section">
+        <div class="score-display">
+          <span class="score-label">您的得分</span>
+          <div class="score-value-wrapper">
+            <span id="score" class="score-value">0</span>
+            <span class="score-unit">分</span>
+          </div>
+        </div>
+      </div>
+      <div class="restart-btn-wrapper">
+        <button id="restart-btn" class="btn btn-primary">重新开始</button>
+      </div>
     </div>
   </div>
 

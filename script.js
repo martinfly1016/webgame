@@ -62,7 +62,7 @@ function renderQuestion() {
   iconsDiv.innerHTML = '';
   question.station.codes.forEach(code => {
     const div = document.createElement('div');
-    div.className = 'icon';
+    div.className = 'station-icon';
     div.style.setProperty('--line-color', lines[code] || '#666');
     
     const span = document.createElement('span');
@@ -75,6 +75,7 @@ function renderQuestion() {
   optionsDiv.innerHTML = '';
   question.options.forEach((st, idx) => {
     const btn = document.createElement('button');
+    btn.className = 'option-btn';
     btn.textContent = st.name_jp;
     btn.onclick = () => selectAnswer(idx);
     optionsDiv.appendChild(btn);
@@ -87,14 +88,14 @@ function renderQuestion() {
 function selectAnswer(idx) {
   // 如果已经选择了答案，先清除之前的选择
   if (selected !== null) {
-    const buttons = document.querySelectorAll('#options button');
+    const buttons = document.querySelectorAll('.option-btn');
     buttons.forEach((btn, i) => {
       btn.classList.remove('selected');
     });
   }
   
   selected = idx;
-  const buttons = document.querySelectorAll('#options button');
+  const buttons = document.querySelectorAll('.option-btn');
   buttons.forEach((btn, i) => {
     if (i === idx) btn.classList.add('selected');
   });
@@ -116,7 +117,7 @@ function startTimer() {
 
 function finishQuestion() {
   const feedback = document.getElementById('feedback');
-  const buttons = document.querySelectorAll('#options button');
+  const buttons = document.querySelectorAll('.option-btn');
 
   // 禁用所有按钮，防止在显示结果时继续选择
   buttons.forEach(btn => {
@@ -125,9 +126,9 @@ function finishQuestion() {
 
   if (selected === question.correct) {
     score += 10;
-    feedback.textContent = 'Correct!';
+    feedback.textContent = '回答正确！';
   } else {
-    feedback.textContent = 'Wrong!';
+    feedback.textContent = '回答错误！';
   }
   buttons.forEach((btn, i) => {
     if (i === question.correct) {
@@ -143,16 +144,10 @@ function finishQuestion() {
 }
 
 function showNextButton() {
-  let nextBtn = document.getElementById('next-btn');
-  if (!nextBtn) {
-    nextBtn = document.createElement('button');
-    nextBtn.id = 'next-btn';
-    nextBtn.textContent = '下一题';
-    nextBtn.className = 'next-button';
-    nextBtn.onclick = nextQuestion;
-    document.getElementById('game').appendChild(nextBtn);
+  const nextBtn = document.getElementById('next-btn');
+  if (nextBtn) {
+    nextBtn.style.display = 'block';
   }
-  nextBtn.style.display = 'block';
 }
 
 function hideNextButton() {
@@ -170,5 +165,6 @@ function endGame() {
 
 document.getElementById('start-btn').addEventListener('click', startGame);
 document.getElementById('restart-btn').addEventListener('click', startGame);
+document.getElementById('next-btn').addEventListener('click', nextQuestion);
 
 init();

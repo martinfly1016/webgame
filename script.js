@@ -33,6 +33,7 @@ function nextQuestion() {
   }
   current++;
   document.getElementById('progress').textContent = `${current}/${totalQuestions}`;
+
   question = generateQuestion();
   renderQuestion();
   startTimer();
@@ -103,6 +104,7 @@ function startTimer() {
 function finishQuestion() {
   const feedback = document.getElementById('feedback');
   const buttons = document.querySelectorAll('#options button');
+
   if (selected === question.correct) {
     score += 10;
     feedback.textContent = 'Correct!';
@@ -117,6 +119,7 @@ function finishQuestion() {
       btn.classList.add('wrong');
     }
   });
+
   setTimeout(nextQuestion, 1000);
 }
 

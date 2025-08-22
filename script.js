@@ -63,8 +63,12 @@ function renderQuestion() {
   question.station.codes.forEach(code => {
     const div = document.createElement('div');
     div.className = 'icon';
-    div.textContent = code;
-    div.style.backgroundColor = lines[code] || '#666';
+    div.style.setProperty('--line-color', lines[code] || '#666');
+    
+    const span = document.createElement('span');
+    span.textContent = code;
+    div.appendChild(span);
+    
     iconsDiv.appendChild(div);
   });
   const optionsDiv = document.getElementById('options');

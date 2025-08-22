@@ -6,26 +6,59 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="start-screen">
-    <h1>Tokyo Metro Quiz</h1>
-    <button id="start-btn">Start Game</button>
+  <div id="start-screen" class="screen">
+    <div class="screen-content">
+      <div class="logo-container">
+        <div class="metro-logo">🚇</div>
+        <h1 class="game-title">东京地铁换乘站识别游戏</h1>
+        <p class="game-description">测试您对东京地铁换乘站标识的熟悉程度</p>
+      </div>
+      <button id="start-btn" class="primary-button">开始游戏</button>
+    </div>
   </div>
 
   <div id="game" class="hidden">
-    <div id="timer">10</div>
-    <div id="progress"></div>
-    <p id="question-text">以上换乘站对应的地铁站是下面哪一项（单选）</p>
-    <div id="icons" class="icons"></div>
-    <div id="options" class="options"></div>
-    <div id="feedback" aria-live="polite"></div>
-    <div id="icons" class="icons"></div>
-    <div id="options" class="options"></div>
-    <div id="feedback"></div>
+    <div class="game-header">
+      <div class="timer-container">
+        <div class="timer-label">剩余时间</div>
+        <div id="timer" class="timer">10</div>
+      </div>
+      <div class="progress-container">
+        <div class="progress-label">进度</div>
+        <div id="progress" class="progress">1/10</div>
+      </div>
+    </div>
+    
+    <div class="question-container">
+      <h2 class="question-title">东京地铁换乘站识别</h2>
+      <p id="question-text" class="question-text">请根据以下换乘站标识，选择对应的地铁站名称</p>
+    </div>
+    
+    <div class="station-icons-container">
+      <div id="icons" class="icons"></div>
+    </div>
+    
+    <div class="options-container">
+      <div id="options" class="options"></div>
+    </div>
+    
+    <div id="feedback" class="feedback" aria-live="polite"></div>
   </div>
 
-  <div id="end-screen" class="hidden">
-    <h2>Your score: <span id="score"></span></h2>
-    <button id="restart-btn">Restart</button>
+  <div id="end-screen" class="screen hidden">
+    <div class="screen-content">
+      <div class="result-container">
+        <div class="result-icon">🎉</div>
+        <h2 class="result-title">游戏结束</h2>
+        <div class="score-display">
+          <span class="score-label">您的得分：</span>
+          <span id="score" class="score-value">0</span>
+          <span class="score-unit">分</span>
+        </div>
+        <p class="result-message">感谢您参与东京地铁换乘站识别游戏！</p>
+      </div>
+      <button id="restart-btn" class="primary-button">重新开始</button>
+    </div>
   </div>
 
   <script src="script.js"></script>

@@ -255,12 +255,10 @@ body {
 
 /* 选项区域 */
 .options-section {
-  padding: 4px 20px 8px;
+  padding: 4px 20px 12px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex: 1;
-  overflow-y: auto;
 }
 
 .options-list {
@@ -336,9 +334,10 @@ body {
 
 /* 反馈区域 */
 .feedback-area {
-  padding: 8px 20px;
+  padding: 12px 20px;
   background: white;
-  margin-bottom: 6px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
@@ -353,7 +352,7 @@ body {
 
 /* 下一题按钮 */
 .next-btn-wrapper {
-  padding: 6px 20px 12px;
+  padding: 8px 20px 16px;
   background: white;
   flex-shrink: 0;
 }

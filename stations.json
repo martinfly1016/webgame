@@ -1,0 +1,1264 @@
+[
+  {
+    "name_en": "Shibuya",
+    "name_jp": "渋谷",
+    "codes": [
+      "Z",
+      "F"
+    ]
+  },
+  {
+    "name_en": "Omote-sando",
+    "name_jp": "表参道",
+    "codes": [
+      "C",
+      "Z"
+    ]
+  },
+  {
+    "name_en": "Aoyama-itchome",
+    "name_jp": "青山一丁目",
+    "codes": [
+      "Z",
+      "E"
+    ]
+  },
+  {
+    "name_en": "Akasaka-mitsuke",
+    "name_jp": "赤坂見附",
+    "codes": [
+      "M",
+      "Y",
+      "Z",
+      "N"
+    ]
+  },
+  {
+    "name_en": "Tameike-sanno",
+    "name_jp": "溜池山王",
+    "codes": [
+      "M",
+      "C",
+      "N"
+    ]
+  },
+  {
+    "name_en": "Toranomon",
+    "name_jp": "虎ノ門",
+    "codes": [
+      "H"
+    ]
+  },
+  {
+    "name_en": "Shimbashi",
+    "name_jp": "新橋",
+    "codes": [
+      "A",
+      "I"
+    ]
+  },
+  {
+    "name_en": "Ginza",
+    "name_jp": "銀座",
+    "codes": [
+      "M",
+      "H",
+      "Y"
+    ]
+  },
+  {
+    "name_en": "Nihombashi",
+    "name_jp": "日本橋",
+    "codes": [
+      "T",
+      "A"
+    ]
+  },
+  {
+    "name_en": "Mitsukoshimae",
+    "name_jp": "三越前",
+    "codes": [
+      "Z"
+    ]
+  },
+  {
+    "name_en": "Kanda",
+    "name_jp": "神田",
+    "codes": [
+      "M",
+      "S"
+    ]
+  },
+  {
+    "name_en": "Ueno-hirokoji",
+    "name_jp": "上野広小路",
+    "codes": [
+      "H",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "name_en": "Ueno",
+    "name_jp": "上野",
+    "codes": [
+      "H"
+    ]
+  },
+  {
+    "name_en": "Asakusa",
+    "name_jp": "浅草",
+    "codes": [
+      "A"
+    ]
+  },
+  {
+    "name_en": "Ogikubo",
+    "name_jp": "荻窪",
+    "codes": [
+      "JC"
+    ]
+  },
+  {
+    "name_en": "Nakano-sakaue",
+    "name_jp": "中野坂上",
+    "codes": [
+      "E"
+    ]
+  },
+  {
+    "name_en": "Shinjuku",
+    "name_jp": "新宿",
+    "codes": [
+      "E",
+      "S"
+    ]
+  },
+  {
+    "name_en": "Shinjuku-sanchome",
+    "name_jp": "新宿三丁目",
+    "codes": [
+      "F",
+      "S"
+    ]
+  },
+  {
+    "name_en": "Yotsuya",
+    "name_jp": "四ツ谷",
+    "codes": [
+      "N"
+    ]
+  },
+  {
+    "name_en": "Akasaka-mitsuke",
+    "name_jp": "赤坂見附",
+    "codes": [
+      "G",
+      "Y",
+      "Z",
+      "N"
+    ]
+  },
+  {
+    "name_en": "Kokkai-gijidomae",
+    "name_jp": "国会議事堂前",
+    "codes": [
+      "C",
+      "N"
+    ]
+  },
+  {
+    "name_en": "Kasumigaseki",
+    "name_jp": "霞ケ関",
+    "codes": [
+      "H",
+      "C"
+    ]
+  },
+  {
+    "name_en": "Ginza",
+    "name_jp": "銀座",
+    "codes": [
+      "G",
+      "H",
+      "Y"
+    ]
+  },
+  {
+    "name_en": "Tokyo",
+    "name_jp": "東京",
+    "codes": [
+      "JY",
+      "JC",
+      "JE",
+      "JO",
+      "JT",
+      "JK"
+    ]
+  },
+  {
+    "name_en": "Otemachi",
+    "name_jp": "大手町",
+    "codes": [
+      "T",
+      "C",
+      "Z",
+      "I"
+    ]
+  },
+  {
+    "name_en": "Awajicho",
+    "name_jp": "淡路町",
+    "codes": [
+      "S"
+    ]
+  },
+  {
+    "name_en": "Ochanomizu",
+    "name_jp": "御茶ノ水",
+    "codes": [
+      "JB"
+    ]
+  },
+  {
+    "name_en": "Hongo-sanchome",
+    "name_jp": "本郷三丁目",
+    "codes": [
+      "E"
+    ]
+  },
+  {
+    "name_en": "Korakuen",
+    "name_jp": "後楽園",
+    "codes": [
+      "N",
+      "I",
+      "E"
+    ]
+  },
+  {
+    "name_en": "Ikebukuro",
+    "name_jp": "池袋",
+    "codes": [
+      "Y",
+      "F"
+    ]
+  },
+  {
+    "name_en": "Naka-meguro",
+    "name_jp": "中目黒",
+    "codes": [
+      "TY"
+    ]
+  },
+  {
+    "name_en": "Ebisu",
+    "name_jp": "恵比寿",
+    "codes": [
+      "JY",
+      "JS",
+      "JA"
+    ]
+  },
+  {
+    "name_en": "Roppongi",
+    "name_jp": "六本木",
+    "codes": [
+      "E"
+    ]
+  },
+  {
+    "name_en": "Toranomon-hills",
+    "name_jp": "虎ノ門ヒルズ",
+    "codes": [
+      "G"
+    ]
+  },
+  {
+    "name_en": "Kasumigaseki",
+    "name_jp": "霞ケ関",
+    "codes": [
+      "M",
+      "C"
+    ]
+  },
+  {
+    "name_en": "Hibiya",
+    "name_jp": "日比谷",
+    "codes": [
+      "M",
+      "C",
+      "I"
+    ]
+  },
+  {
+    "name_en": "Ginza",
+    "name_jp": "銀座",
+    "codes": [
+      "M",
+      "Y",
+      "G"
+    ]
+  },
+  {
+    "name_en": "Higashi-ginza",
+    "name_jp": "東銀座",
+    "codes": [
+      "A"
+    ]
+  },
+  {
+    "name_en": "Hatchobori",
+    "name_jp": "八丁堀",
+    "codes": [
+      "JE"
+    ]
+  },
+  {
+    "name_en": "Kayabacho",
+    "name_jp": "茅場町",
+    "codes": [
+      "T"
+    ]
+  },
+  {
+    "name_en": "Ningyocho",
+    "name_jp": "人形町",
+    "codes": [
+      "A"
+    ]
+  },
+  {
+    "name_en": "Akihabara",
+    "name_jp": "秋葉原",
+    "codes": [
+      "JY",
+      "JB",
+      "TX"
+    ]
+  },
+  {
+    "name_en": "Naka-okachimachi",
+    "name_jp": "仲御徒町",
+    "codes": [
+      "G",
+      "E",
+      "C"
+    ]
+  },
+  {
+    "name_en": "Ueno",
+    "name_jp": "上野",
+    "codes": [
+      "G"
+    ]
+  },
+  {
+    "name_en": "Minami-senju",
+    "name_jp": "南千住",
+    "codes": [
+      "TS"
+    ]
+  },
+  {
+    "name_en": "Kita-senju",
+    "name_jp": "北千住",
+    "codes": [
+      "C"
+    ]
+  },
+  {
+    "name_en": "Nakano",
+    "name_jp": "中野",
+    "codes": [
+      "JB",
+      "JC"
+    ]
+  },
+  {
+    "name_en": "Takadanobaba",
+    "name_jp": "高田馬場",
+    "codes": [
+      "F"
+    ]
+  },
+  {
+    "name_en": "Iidabashi",
+    "name_jp": "飯田橋",
+    "codes": [
+      "Y",
+      "N",
+      "E"
+    ]
+  },
+  {
+    "name_en": "Kudanshita",
+    "name_jp": "九段下",
+    "codes": [
+      "Z",
+      "S"
+    ]
+  },
+  {
+    "name_en": "Otemachi",
+    "name_jp": "大手町",
+    "codes": [
+      "M",
+      "C",
+      "Z",
+      "I"
+    ]
+  },
+  {
+    "name_en": "Nihombashi",
+    "name_jp": "日本橋",
+    "codes": [
+      "G",
+      "A"
+    ]
+  },
+  {
+    "name_en": "Kayabacho",
+    "name_jp": "茅場町",
+    "codes": [
+      "H"
+    ]
+  },
+  {
+    "name_en": "Monzen-nakacho",
+    "name_jp": "門前仲町",
+    "codes": [
+      "E"
+    ]
+  },
+  {
+    "name_en": "Nishi-funabashi",
+    "name_jp": "西船橋",
+    "codes": [
+      "JB",
+      "JM",
+      "TR"
+    ]
+  },
+  {
+    "name_en": "Yoyogi-uehara",
+    "name_jp": "代々木上原",
+    "codes": [
+      "OH"
+    ]
+  },
+  {
+    "name_en": "Meiji-jingumae <Harajuku>",
+    "name_jp": "明治神宮前〈原宿〉",
+    "codes": [
+      "F"
+    ]
+  },
+  {
+    "name_en": "Omote-sando",
+    "name_jp": "表参道",
+    "codes": [
+      "G",
+      "Z"
+    ]
+  },
+  {
+    "name_en": "Kokkai-gijidomae",
+    "name_jp": "国会議事堂前",
+    "codes": [
+      "M",
+      "N"
+    ]
+  },
+  {
+    "name_en": "Kasumigaseki",
+    "name_jp": "霞ケ関",
+    "codes": [
+      "M",
+      "H"
+    ]
+  },
+  {
+    "name_en": "Hibiya",
+    "name_jp": "日比谷",
+    "codes": [
+      "M",
+      "H",
+      "I"
+    ]
+  },
+  {
+    "name_en": "Otemachi",
+    "name_jp": "大手町",
+    "codes": [
+      "M",
+      "T",
+      "Z",
+      "I"
+    ]
+  },
+  {
+    "name_en": "Shin-ochanomizu",
+    "name_jp": "新御茶ノ水",
+    "codes": [
+      "S"
+    ]
+  },
+  {
+    "name_en": "Nishi-nippori",
+    "name_jp": "西日暮里",
+    "codes": [
+      "JY",
+      "JK",
+      "NT"
+    ]
+  },
+  {
+    "name_en": "Kita-senju",
+    "name_jp": "北千住",
+    "codes": [
+      "H"
+    ]
+  },
+  {
+    "name_en": "Wakoshi",
+    "name_jp": "和光市",
+    "codes": [
+      "F"
+    ]
+  },
+  {
+    "name_en": "Chikatetsu-narimasu",
+    "name_jp": "地下鉄成増",
+    "codes": [
+      "F"
+    ]
+  },
+  {
+    "name_en": "Chikatetsu-akatsuka",
+    "name_jp": "地下鉄赤塚",
+    "codes": [
+      "F"
+    ]
+  },
+  {
+    "name_en": "Kotake-mukaihara",
+    "name_jp": "小竹向原",
+    "codes": [
+      "F"
+    ]
+  },
+  {
+    "name_en": "Ikebukuro",
+    "name_jp": "池袋",
+    "codes": [
+      "M",
+      "F"
+    ]
+  },
+  {
+    "name_en": "Iidabashi",
+    "name_jp": "飯田橋",
+    "codes": [
+      "T",
+      "N",
+      "E"
+    ]
+  },
+  {
+    "name_en": "Ichigaya",
+    "name_jp": "市ケ谷",
+    "codes": [
+      "N",
+      "S"
+    ]
+  },
+  {
+    "name_en": "Nagatacho",
+    "name_jp": "永田町",
+    "codes": [
+      "Z",
+      "N"
+    ]
+  },
+  {
+    "name_en": "Yurakucho",
+    "name_jp": "有楽町",
+    "codes": [
+      "JY",
+      "JE"
+    ]
+  },
+  {
+    "name_en": "Tsukishima",
+    "name_jp": "月島",
+    "codes": [
+      "E"
+    ]
+  },
+  {
+    "name_en": "Toyosu",
+    "name_jp": "豊洲",
+    "codes": [
+      "U"
+    ]
+  },
+  {
+    "name_en": "Shin-kiba",
+    "name_jp": "新木場",
+    "codes": [
+      "JE",
+      "R"
+    ]
+  },
+  {
+    "name_en": "Shibuya",
+    "name_jp": "渋谷",
+    "codes": [
+      "G",
+      "F"
+    ]
+  },
+  {
+    "name_en": "Omote-sando",
+    "name_jp": "表参道",
+    "codes": [
+      "G",
+      "C"
+    ]
+  },
+  {
+    "name_en": "Aoyama-itchome",
+    "name_jp": "青山一丁目",
+    "codes": [
+      "G",
+      "E"
+    ]
+  },
+  {
+    "name_en": "Nagatacho",
+    "name_jp": "永田町",
+    "codes": [
+      "Y",
+      "N"
+    ]
+  },
+  {
+    "name_en": "Kudanshita",
+    "name_jp": "九段下",
+    "codes": [
+      "T",
+      "S"
+    ]
+  },
+  {
+    "name_en": "Jimbocho",
+    "name_jp": "神保町",
+    "codes": [
+      "I",
+      "S"
+    ]
+  },
+  {
+    "name_en": "Otemachi",
+    "name_jp": "大手町",
+    "codes": [
+      "M",
+      "T",
+      "C",
+      "I"
+    ]
+  },
+  {
+    "name_en": "Mitsukoshimae",
+    "name_jp": "三越前",
+    "codes": [
+      "G"
+    ]
+  },
+  {
+    "name_en": "Kiyosumi-shirakawa",
+    "name_jp": "清澄白河",
+    "codes": [
+      "E"
+    ]
+  },
+  {
+    "name_en": "Sumiyoshi",
+    "name_jp": "住吉",
+    "codes": [
+      "S",
+      "E"
+    ]
+  },
+  {
+    "name_en": "Kinshicho",
+    "name_jp": "錦糸町",
+    "codes": [
+      "JB"
+    ]
+  },
+  {
+    "name_en": "Oshiage <SKYTREE>",
+    "name_jp": "押上〈スカイツリー〉",
+    "codes": [
+      "A"
+    ]
+  },
+  {
+    "name_en": "Meguro",
+    "name_jp": "目黒",
+    "codes": [
+      "I"
+    ]
+  },
+  {
+    "name_en": "Shirokanedai",
+    "name_jp": "白金台",
+    "codes": [
+      "I"
+    ]
+  },
+  {
+    "name_en": "Shirokane-takanawa",
+    "name_jp": "白金高輪",
+    "codes": [
+      "I"
+    ]
+  },
+  {
+    "name_en": "Azabu-juban",
+    "name_jp": "麻布十番",
+    "codes": [
+      "E"
+    ]
+  },
+  {
+    "name_en": "Tameike-sanno",
+    "name_jp": "溜池山王",
+    "codes": [
+      "M",
+      "C"
+    ]
+  },
+  {
+    "name_en": "Nagatacho",
+    "name_jp": "永田町",
+    "codes": [
+      "Y",
+      "Z"
+    ]
+  },
+  {
+    "name_en": "Yotsuya",
+    "name_jp": "四ツ谷",
+    "codes": [
+      "M"
+    ]
+  },
+  {
+    "name_en": "Ichigaya",
+    "name_jp": "市ケ谷",
+    "codes": [
+      "Y",
+      "S"
+    ]
+  },
+  {
+    "name_en": "Iidabashi",
+    "name_jp": "飯田橋",
+    "codes": [
+      "T",
+      "Y",
+      "E"
+    ]
+  },
+  {
+    "name_en": "Korakuen",
+    "name_jp": "後楽園",
+    "codes": [
+      "M",
+      "I",
+      "E"
+    ]
+  },
+  {
+    "name_en": "Komagome",
+    "name_jp": "駒込",
+    "codes": [
+      "JY"
+    ]
+  },
+  {
+    "name_en": "Oji",
+    "name_jp": "王子",
+    "codes": [
+      "JK"
+    ]
+  },
+  {
+    "name_en": "Akabane-iwabuchi",
+    "name_jp": "赤羽岩淵",
+    "codes": [
+      "SR"
+    ]
+  },
+  {
+    "name_en": "Wakoshi",
+    "name_jp": "和光市",
+    "codes": [
+      "Y"
+    ]
+  },
+  {
+    "name_en": "Chikatetsu-narimasu",
+    "name_jp": "地下鉄成増",
+    "codes": [
+      "Y"
+    ]
+  },
+  {
+    "name_en": "Chikatetsu-akatsuka",
+    "name_jp": "地下鉄赤塚",
+    "codes": [
+      "Y"
+    ]
+  },
+  {
+    "name_en": "Kotake-mukaihara",
+    "name_jp": "小竹向原",
+    "codes": [
+      "Y"
+    ]
+  },
+  {
+    "name_en": "Ikebukuro",
+    "name_jp": "池袋",
+    "codes": [
+      "M",
+      "Y"
+    ]
+  },
+  {
+    "name_en": "Higashi-shinjuku",
+    "name_jp": "東新宿",
+    "codes": [
+      "E"
+    ]
+  },
+  {
+    "name_en": "Shinjuku-sanchome",
+    "name_jp": "新宿三丁目",
+    "codes": [
+      "M",
+      "S"
+    ]
+  },
+  {
+    "name_en": "Meiji-jingumae",
+    "name_jp": "明治神宮前",
+    "codes": [
+      "C"
+    ]
+  },
+  {
+    "name_en": "Shibuya",
+    "name_jp": "渋谷",
+    "codes": [
+      "G",
+      "Z"
+    ]
+  },
+  {
+    "name_en": "Gotanda",
+    "name_jp": "五反田",
+    "codes": [
+      "I"
+    ]
+  },
+  {
+    "name_en": "Sengakuji",
+    "name_jp": "泉岳寺",
+    "codes": [
+      "KK"
+    ]
+  },
+  {
+    "name_en": "Mita",
+    "name_jp": "三田",
+    "codes": [
+      "I"
+    ]
+  },
+  {
+    "name_en": "Daimon",
+    "name_jp": "大門",
+    "codes": [
+      "E"
+    ]
+  },
+  {
+    "name_en": "Shimbashi",
+    "name_jp": "新橋",
+    "codes": [
+      "G",
+      "I"
+    ]
+  },
+  {
+    "name_en": "Higashi-ginza",
+    "name_jp": "東銀座",
+    "codes": [
+      "H"
+    ]
+  },
+  {
+    "name_en": "Nihombashi",
+    "name_jp": "日本橋",
+    "codes": [
+      "G",
+      "T"
+    ]
+  },
+  {
+    "name_en": "Ningyocho",
+    "name_jp": "人形町",
+    "codes": [
+      "H"
+    ]
+  },
+  {
+    "name_en": "Higashi-nihombashi",
+    "name_jp": "東日本橋",
+    "codes": [
+      "S"
+    ]
+  },
+  {
+    "name_en": "Asakusabashi",
+    "name_jp": "浅草橋",
+    "codes": [
+      "JB"
+    ]
+  },
+  {
+    "name_en": "Kuramae",
+    "name_jp": "蔵前",
+    "codes": [
+      "E"
+    ]
+  },
+  {
+    "name_en": "Asakusa",
+    "name_jp": "浅草",
+    "codes": [
+      "G"
+    ]
+  },
+  {
+    "name_en": "Oshiage",
+    "name_jp": "押上",
+    "codes": [
+      "Z"
+    ]
+  },
+  {
+    "name_en": "Meguro",
+    "name_jp": "目黒",
+    "codes": [
+      "N"
+    ]
+  },
+  {
+    "name_en": "Shirokanedai",
+    "name_jp": "白金台",
+    "codes": [
+      "N"
+    ]
+  },
+  {
+    "name_en": "Shirokane-takanawa",
+    "name_jp": "白金高輪",
+    "codes": [
+      "N"
+    ]
+  },
+  {
+    "name_en": "Mita",
+    "name_jp": "三田",
+    "codes": [
+      "A"
+    ]
+  },
+  {
+    "name_en": "Hibiya",
+    "name_jp": "日比谷",
+    "codes": [
+      "H",
+      "M",
+      "C"
+    ]
+  },
+  {
+    "name_en": "Otemachi",
+    "name_jp": "大手町",
+    "codes": [
+      "M",
+      "T",
+      "C",
+      "Z"
+    ]
+  },
+  {
+    "name_en": "Jimbocho",
+    "name_jp": "神保町",
+    "codes": [
+      "Z",
+      "S"
+    ]
+  },
+  {
+    "name_en": "Suidobashi",
+    "name_jp": "水道橋",
+    "codes": [
+      "JB"
+    ]
+  },
+  {
+    "name_en": "Kasuga",
+    "name_jp": "春日",
+    "codes": [
+      "M",
+      "E"
+    ]
+  },
+  {
+    "name_en": "Sugamo",
+    "name_jp": "巣鴨",
+    "codes": [
+      "JY"
+    ]
+  },
+  {
+    "name_en": "Shinjuku",
+    "name_jp": "新宿",
+    "codes": [
+      "M",
+      "E"
+    ]
+  },
+  {
+    "name_en": "Shinjuku-sanchome",
+    "name_jp": "新宿三丁目",
+    "codes": [
+      "M",
+      "F"
+    ]
+  },
+  {
+    "name_en": "Ichigaya",
+    "name_jp": "市ケ谷",
+    "codes": [
+      "Y",
+      "N"
+    ]
+  },
+  {
+    "name_en": "Kudanshita",
+    "name_jp": "九段下",
+    "codes": [
+      "Z",
+      "T"
+    ]
+  },
+  {
+    "name_en": "Jimbocho",
+    "name_jp": "神保町",
+    "codes": [
+      "Z",
+      "I"
+    ]
+  },
+  {
+    "name_en": "Ogawamachi",
+    "name_jp": "小川町",
+    "codes": [
+      "M",
+      "C"
+    ]
+  },
+  {
+    "name_en": "Iwamotocho",
+    "name_jp": "岩本町",
+    "codes": [
+      "JB"
+    ]
+  },
+  {
+    "name_en": "Bakuro-yokoyama",
+    "name_jp": "馬喰横山",
+    "codes": [
+      "A"
+    ]
+  },
+  {
+    "name_en": "Morishita",
+    "name_jp": "森下",
+    "codes": [
+      "E"
+    ]
+  },
+  {
+    "name_en": "Sumiyoshi",
+    "name_jp": "住吉",
+    "codes": [
+      "Z",
+      "E"
+    ]
+  },
+  {
+    "name_en": "Motoyawata",
+    "name_jp": "本八幡",
+    "codes": [
+      "JB"
+    ]
+  },
+  {
+    "name_en": "Higashi-shinjuku",
+    "name_jp": "東新宿",
+    "codes": [
+      "F"
+    ]
+  },
+  {
+    "name_en": "Iidabashi",
+    "name_jp": "飯田橋",
+    "codes": [
+      "T",
+      "Y",
+      "N"
+    ]
+  },
+  {
+    "name_en": "Kasuga",
+    "name_jp": "春日",
+    "codes": [
+      "I"
+    ]
+  },
+  {
+    "name_en": "Hongo-sanchome",
+    "name_jp": "本郷三丁目",
+    "codes": [
+      "M"
+    ]
+  },
+  {
+    "name_en": "Ueno-okachimachi",
+    "name_jp": "上野御徒町",
+    "codes": [
+      "H",
+      "G"
+    ]
+  },
+  {
+    "name_en": "Shin-okachimachi",
+    "name_jp": "新御徒町",
+    "codes": [
+      "TX"
+    ]
+  },
+  {
+    "name_en": "Kuramae",
+    "name_jp": "蔵前",
+    "codes": [
+      "A"
+    ]
+  },
+  {
+    "name_en": "Ryogoku",
+    "name_jp": "両国",
+    "codes": [
+      "JB"
+    ]
+  },
+  {
+    "name_en": "Morishita",
+    "name_jp": "森下",
+    "codes": [
+      "S"
+    ]
+  },
+  {
+    "name_en": "Kiyosumi-shirakawa",
+    "name_jp": "清澄白河",
+    "codes": [
+      "Z"
+    ]
+  },
+  {
+    "name_en": "Monzen-nakacho",
+    "name_jp": "門前仲町",
+    "codes": [
+      "T"
+    ]
+  },
+  {
+    "name_en": "Tsukishima",
+    "name_jp": "月島",
+    "codes": [
+      "Y"
+    ]
+  },
+  {
+    "name_en": "Daimon",
+    "name_jp": "大門",
+    "codes": [
+      "A"
+    ]
+  },
+  {
+    "name_en": "Azabu-juban",
+    "name_jp": "麻布十番",
+    "codes": [
+      "N"
+    ]
+  },
+  {
+    "name_en": "Roppongi",
+    "name_jp": "六本木",
+    "codes": [
+      "H"
+    ]
+  },
+  {
+    "name_en": "Aoyama-itchome",
+    "name_jp": "青山一丁目",
+    "codes": [
+      "G",
+      "Z"
+    ]
+  },
+  {
+    "name_en": "Yoyogi",
+    "name_jp": "代々木",
+    "codes": [
+      "JB"
+    ]
+  },
+  {
+    "name_en": "Shinjuku",
+    "name_jp": "新宿",
+    "codes": [
+      "M",
+      "S"
+    ]
+  },
+  {
+    "name_en": "Nakano-sakaue",
+    "name_jp": "中野坂上",
+    "codes": [
+      "M"
+    ]
+  }
+]

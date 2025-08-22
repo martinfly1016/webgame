@@ -163,8 +163,18 @@ function endGame() {
   document.getElementById('score').textContent = score;
 }
 
-document.getElementById('start-btn').addEventListener('click', startGame);
-document.getElementById('restart-btn').addEventListener('click', startGame);
-document.getElementById('next-btn').addEventListener('click', nextQuestion);
-
-init();
+// 等待DOM加载完成后绑定事件
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('start-btn').addEventListener('click', startGame);
+  document.getElementById('restart-btn').addEventListener('click', startGame);
+  
+  const nextBtn = document.getElementById('next-btn');
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function() {
+      console.log('下一题按钮被点击');
+      nextQuestion();
+    });
+  }
+  
+  init();
+});

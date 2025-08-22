@@ -40,7 +40,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 4px; /* 进一步减少整体内边距 */
+  padding: 2px; /* 进一步减少整体内边距 */
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
   justify-content: space-between; /* 调整内容分布，使其更紧凑 */
@@ -100,16 +100,16 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 8px 4px; /* 减少内边距 */
+  padding: 6px 2px; /* 减少内边距 */
 }
 
 .header {
-  margin-bottom: 15px; /* 进一步减少空白 */
+  margin-bottom: 10px; /* 进一步减少空白 */
 }
 
 .logo {
-  font-size: 45px;
-  margin-bottom: 6px; /* 进一步减少空白 */
+  font-size: 40px;
+  margin-bottom: 4px; /* 进一步减少空白 */
   animation: bounce 2s infinite;
 }
 
@@ -126,22 +126,22 @@ body {
 }
 
 .title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: white;
-  margin-bottom: 4px; /* 进一步减少空白 */
+  margin-bottom: 2px; /* 进一步减少空白 */
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .subtitle {
-  font-size: 11px;
+  font-size: 10px;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.2;
 }
 
 .start-btn-wrapper {
   width: 100%;
-  max-width: 180px;
+  max-width: 160px;
 }
 
 /* 游戏界面 */
@@ -157,7 +157,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 8px; /* 减少内边距 */
+  padding: 3px 6px; /* 减少内边距 */
   background: white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   flex-shrink: 0;
@@ -171,14 +171,14 @@ body {
 }
 
 .status-label {
-  font-size: 8px;
+  font-size: 7px;
   color: #a0a0a0;
   margin-bottom: 0px;
   font-weight: 500;
 }
 
 .status-value {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   color: #333;
 }
@@ -189,39 +189,39 @@ body {
 
 /* 问题区域 */
 .question-section {
-  padding: 6px 8px; /* 减少内边距 */
+  padding: 4px 6px; /* 减少内边距 */
   background: white;
-  margin-bottom: 1px; /* 进一步减少空白 */
+  margin-bottom: 0px; /* 进一步减少空白 */
   flex-shrink: 0;
 }
 
 .question-title {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   color: #333;
   text-align: center;
-  margin-bottom: 6px; /* 减少空白 */
+  margin-bottom: 4px; /* 减少空白 */
 }
 
 .station-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4px; /* 减少图标间距 */
+  gap: 3px; /* 减少图标间距 */
   flex-wrap: wrap;
 }
 
 /* 东京地铁风格圆环图标 */
 .station-icon {
   position: relative;
-  width: 36px; /* 稍微缩小图标大小 */
-  height: 36px;
+  width: 32px; /* 稍微缩小图标大小 */
+  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   background: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
   transition: transform 0.2s ease;
 }
 
@@ -250,7 +250,7 @@ body {
 }
 
 .station-icon:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .station-icon span {
@@ -258,44 +258,44 @@ body {
   z-index: 2;
   background: var(--line-color);
   color: white;
-  width: 26px; /* 稍微缩小图标内字母区域 */
-  height: 26px;
+  width: 22px; /* 稍微缩小图标内字母区域 */
+  height: 22px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 11px; /* 稍微缩小字体 */
+  font-size: 10px; /* 稍微缩小字体 */
 }
 
 /* 选项区域 */
 .options-section {
   flex: 1;
-  padding: 0 8px; /* 减少内边距 */
+  padding: 0 6px; /* 减少内边距 */
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* 让选项顶部对齐 */
-  padding-top: 2px; /* 进一步减少与上方区域的距离 */
+  padding-top: 0px; /* 进一步减少与上方区域的距离 */
 }
 
 .options-list {
   display: flex;
   flex-direction: column;
-  gap: 4px; /* 减少选项间距 */
+  gap: 3px; /* 减少选项间距 */
 }
 
 .option-btn {
-  padding: 6px 12px; /* 减少选项内边距 */
-  font-size: 12px;
+  padding: 5px 10px; /* 减少选项内边距 */
+  font-size: 11px;
   font-weight: 500;
-  border: 1px solid #ebf0f5;
-  border-radius: 5px;
+  border: 1px solid #eef3f7;
+  border-radius: 4px;
   background: white;
   color: #333;
   cursor: pointer;
   transition: all 0.2s ease;
   text-align: left;
-  min-height: 36px; /* 减少最小高度 */
+  min-height: 32px; /* 减少最小高度 */
   display: flex;
   align-items: center;
   position: relative;
@@ -315,32 +315,32 @@ body {
   border-color: #667eea;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.15);
+  box-shadow: 0 1px 4px rgba(102, 126, 234, 0.1);
 }
 
 .option-btn.correct {
   border-color: #27ae60;
   background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
   color: white;
-  box-shadow: 0 2px 6px rgba(39, 174, 96, 0.15);
+  box-shadow: 0 1px 4px rgba(39, 174, 96, 0.1);
 }
 
 .option-btn.wrong {
   border-color: #e74c3c;
   background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
   color: white;
-  box-shadow: 0 2px 6px rgba(231, 76, 60, 0.15);
+  box-shadow: 0 1px 4px rgba(231, 76, 60, 0.1);
 }
 
 /* 反馈区域 */
 .feedback-area {
-  padding: 4px 8px; /* 减少内边距 */
+  padding: 3px 6px; /* 减少内边距 */
   background: white;
-  margin-bottom: 1px; /* 减少外边距 */
+  margin-bottom: 0px; /* 减少外边距 */
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
-  min-height: 32px; /* 减少最小高度 */
+  min-height: 28px; /* 减少最小高度 */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -349,7 +349,7 @@ body {
 
 /* 下一题按钮 */
 .next-btn-wrapper {
-  padding: 4px 8px; /* 减少内边距 */
+  padding: 3px 6px; /* 减少内边距 */
   background: white;
   flex-shrink: 0;
 }
@@ -365,16 +365,16 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 8px 4px;
+  padding: 6px 2px;
 }
 
 .result-header {
-  margin-bottom: 10px; /* 减少外边距 */
+  margin-bottom: 8px; /* 减少外边距 */
 }
 
 .result-icon {
-  font-size: 45px;
-  margin-bottom: 8px; /* 减少外边距 */
+  font-size: 40px;
+  margin-bottom: 6px; /* 减少外边距 */
   animation: celebrate 1s ease-in-out;
 }
 
@@ -385,14 +385,14 @@ body {
 }
 
 .result-title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .score-section {
-  margin-bottom: 15px; /* 减少外边距 */
+  margin-bottom: 10px; /* 减少外边距 */
 }
 
 .score-display {
@@ -402,38 +402,172 @@ body {
 }
 
 .score-label {
-  font-size: 11px;
+  font-size: 10px;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 4px; /* 减少外边距 */
+  margin-bottom: 2px; /* 减少外边距 */
 }
 
 .score-value-wrapper {
   display: flex;
   align-items: baseline;
-  gap: 1px; /* 减少间距 */
+  gap: 0px; /* 减少间距 */
 }
 
 .score-value {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   color: #ffd700;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .score-unit {
-  font-size: 12px;
+  font-size: 11px;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .restart-btn-wrapper {
   width: 100%;
-  max-width: 180px;
+  max-width: 160px;
 }
 
 /* 响应式适配 */
 @media (max-width: 375px) {
   .page-content {
-    padding: 2px 1px;
+    padding: 1px;
+  }
+
+  #start-screen .page-content,
+  #end-screen .page-content {
+    padding: 4px 1px;
+  }
+
+  .header {
+    margin-bottom: 6px;
+  }
+
+  .logo {
+    font-size: 28px;
+    margin-bottom: 2px;
+  }
+
+  .title {
+    font-size: 10px;
+  }
+
+  .subtitle {
+    font-size: 7px;
+  }
+
+  .start-btn-wrapper,
+  .restart-btn-wrapper {
+    max-width: 100px;
+  }
+
+  .status-bar {
+    padding: 2px 3px;
+  }
+
+  .status-label {
+    font-size: 5px;
+  }
+
+  .status-value {
+    font-size: 7px;
+  }
+
+  .question-section {
+    padding: 3px 3px;
+    margin-bottom: 0px;
+  }
+
+  .question-title {
+    font-size: 10px;
+    margin-bottom: 3px;
+  }
+
+  .station-icons {
+    gap: 1px;
+  }
+
+  .station-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .station-icon span {
+    width: 14px;
+    height: 14px;
+    font-size: 7px;
+  }
+
+  .options-section {
+    padding: 0 3px;
+  }
+
+  .options-list {
+    gap: 1px;
+  }
+
+  .option-btn {
+    padding: 3px 5px;
+    font-size: 9px;
+    min-height: 24px;
+  }
+
+  .feedback-area {
+    padding: 3px 3px;
+    margin-bottom: 0px;
+    font-size: 8px;
+    min-height: 20px;
+  }
+
+  .next-btn-wrapper {
+    padding: 3px;
+  }
+
+  .result-header {
+    margin-bottom: 4px;
+  }
+
+  .result-icon {
+    font-size: 28px;
+    margin-bottom: 3px;
+  }
+
+  .result-title {
+    font-size: 10px;
+  }
+
+  .score-section {
+    margin-bottom: 6px;
+  }
+
+  .score-label {
+    font-size: 7px;
+  }
+
+  .score-value-wrapper {
+    gap: 0px;
+  }
+
+  .score-value {
+    font-size: 16px;
+  }
+
+  .score-unit {
+    font-size: 8px;
+  }
+
+  .btn {
+    padding: 4px 8px;
+    font-size: 9px;
+    min-height: 24px;
+  }
+}
+
+@media (max-height: 550px) and (min-width: 376px) {
+  .page-content {
+    padding: 2px;
   }
 
   #start-screen .page-content,
@@ -442,7 +576,7 @@ body {
   }
 
   .header {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .logo {
@@ -451,20 +585,20 @@ body {
   }
 
   .title {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .subtitle {
-    font-size: 8px;
+    font-size: 9px;
   }
 
   .start-btn-wrapper,
   .restart-btn-wrapper {
-    max-width: 120px;
+    max-width: 140px;
   }
 
   .status-bar {
-    padding: 3px 4px;
+    padding: 3px 6px;
   }
 
   .status-label {
@@ -472,16 +606,16 @@ body {
   }
 
   .status-value {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .question-section {
-    padding: 4px 4px;
+    padding: 4px 6px;
     margin-bottom: 1px;
   }
 
   .question-title {
-    font-size: 11px;
+    font-size: 12px;
     margin-bottom: 4px;
   }
 
@@ -490,18 +624,18 @@ body {
   }
 
   .station-icon {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
   }
 
   .station-icon span {
-    width: 16px;
-    height: 16px;
-    font-size: 8px;
+    width: 20px;
+    height: 20px;
+    font-size: 9px;
   }
 
   .options-section {
-    padding: 0 4px;
+    padding: 0 6px;
   }
 
   .options-list {
@@ -509,24 +643,24 @@ body {
   }
 
   .option-btn {
-    padding: 4px 6px;
+    padding: 5px 8px;
+    font-size: 11px;
+    min-height: 32px;
+  }
+
+  .feedback-area {
+    padding: 3px 6px;
+    margin-bottom: 1px;
     font-size: 10px;
     min-height: 28px;
   }
 
-  .feedback-area {
-    padding: 4px 4px;
-    margin-bottom: 1px;
-    font-size: 9px;
-    min-height: 24px;
-  }
-
   .next-btn-wrapper {
-    padding: 4px;
+    padding: 3px 6px;
   }
 
   .result-header {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
   }
 
   .result-icon {
@@ -535,11 +669,11 @@ body {
   }
 
   .result-title {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .score-section {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .score-label {
@@ -547,186 +681,52 @@ body {
   }
 
   .score-value-wrapper {
-    gap: 0px;
+    gap: 1px;
   }
 
   .score-value {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .score-unit {
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .btn {
     padding: 5px 10px;
-    font-size: 10px;
+    font-size: 11px;
     min-height: 28px;
-  }
-}
-
-@media (max-height: 550px) and (min-width: 376px) {
-  .page-content {
-    padding: 4px;
-  }
-
-  #start-screen .page-content,
-  #end-screen .page-content {
-    padding: 8px 4px;
-  }
-
-  .header {
-    margin-bottom: 15px;
-  }
-
-  .logo {
-    font-size: 36px;
-    margin-bottom: 6px;
-  }
-
-  .title {
-    font-size: 16px;
-  }
-
-  .subtitle {
-    font-size: 10px;
-  }
-
-  .start-btn-wrapper,
-  .restart-btn-wrapper {
-    max-width: 160px;
-  }
-
-  .status-bar {
-    padding: 4px 8px;
-  }
-
-  .status-label {
-    font-size: 7px;
-  }
-
-  .status-value {
-    font-size: 12px;
-  }
-
-  .question-section {
-    padding: 6px 8px;
-    margin-bottom: 2px;
-  }
-
-  .question-title {
-    font-size: 14px;
-    margin-bottom: 6px;
-  }
-
-  .station-icons {
-    gap: 4px;
-  }
-
-  .station-icon {
-    width: 32px;
-    height: 32px;
-  }
-
-  .station-icon span {
-    width: 24px;
-    height: 24px;
-    font-size: 11px;
-  }
-
-  .options-section {
-    padding: 0 8px;
-  }
-
-  .options-list {
-    gap: 3px;
-  }
-
-  .option-btn {
-    padding: 6px 10px;
-    font-size: 12px;
-    min-height: 36px;
-  }
-
-  .feedback-area {
-    padding: 4px 8px;
-    margin-bottom: 2px;
-    font-size: 11px;
-    min-height: 32px;
-  }
-
-  .next-btn-wrapper {
-    padding: 4px 8px;
-  }
-
-  .result-header {
-    margin-bottom: 10px;
-  }
-
-  .result-icon {
-    font-size: 36px;
-    margin-bottom: 6px;
-  }
-
-  .result-title {
-    font-size: 14px;
-  }
-
-  .score-section {
-    margin-bottom: 15px;
-  }
-
-  .score-label {
-    font-size: 9px;
-  }
-
-  .score-value-wrapper {
-    gap: 2px;
-  }
-
-  .score-value {
-    font-size: 24px;
-  }
-
-  .score-unit {
-    font-size: 12px;
-  }
-
-  .btn {
-    padding: 6px 12px;
-    font-size: 12px;
-    min-height: 32px;
   }
 }
 
 /* 安全区域适配 */
 @supports (padding: max(0px)) {
   .page-content {
-    padding-left: max(4px, env(safe-area-inset-left));
-    padding-right: max(4px, env(safe-area-inset-right));
-    padding-top: max(4px, env(safe-area-inset-top));
-    padding-bottom: max(4px, env(safe-area-inset-bottom));
+    padding-left: max(2px, env(safe-area-inset-left));
+    padding-right: max(2px, env(safe-area-inset-right));
+    padding-top: max(2px, env(safe-area-inset-top));
+    padding-bottom: max(2px, env(safe-area-inset-bottom));
   }
   
   #start-screen .page-content,
   #end-screen .page-content {
-    padding-left: max(4px, env(safe-area-inset-left));
-    padding-right: max(4px, env(safe-area-inset-right));
-    padding-top: max(8px, env(safe-area-inset-top));
-    padding-bottom: max(8px, env(safe-area-inset-bottom));
+    padding-left: max(2px, env(safe-area-inset-left));
+    padding-right: max(2px, env(safe-area-inset-right));
+    padding-top: max(6px, env(safe-area-inset-top));
+    padding-bottom: max(6px, env(safe-area-inset-bottom));
   }
 
   .status-bar {
-    padding-left: max(8px, env(safe-area-inset-left));
-    padding-right: max(8px, env(safe-area-inset-right));
-    padding-top: max(4px, env(safe-area-inset-top));
+    padding-left: max(6px, env(safe-area-inset-left));
+    padding-right: max(6px, env(safe-area-inset-right));
+    padding-top: max(3px, env(safe-area-inset-top));
   }
   
   .question-section,
   .options-section,
   .feedback-area,
   .next-btn-wrapper {
-    padding-left: max(8px, env(safe-area-inset-left));
-    padding-right: max(8px, env(safe-area-inset-right));
+    padding-left: max(6px, env(safe-area-inset-left));
+    padding-right: max(6px, env(safe-area-inset-right));
   }
 }

@@ -102,12 +102,21 @@ function startTimer() {
 
 function finishQuestion() {
   const feedback = document.getElementById('feedback');
+  const buttons = document.querySelectorAll('#options button');
   if (selected === question.correct) {
     score += 10;
     feedback.textContent = 'Correct!';
   } else {
     feedback.textContent = 'Wrong!';
   }
+  buttons.forEach((btn, i) => {
+    if (i === question.correct) {
+      btn.classList.add('correct');
+    }
+    if (selected !== null && i === selected && selected !== question.correct) {
+      btn.classList.add('wrong');
+    }
+  });
   setTimeout(nextQuestion, 1000);
 }
 

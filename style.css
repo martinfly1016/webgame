@@ -32,6 +32,12 @@ body {
 .options button.selected {
   background-color: #add8e6;
 }
+.options button.correct {
+  background-color: #90ee90;
+}
+.options button.wrong {
+  background-color: #f08080;
+}
 #timer {
   font-size: 24px;
   font-weight: bold;

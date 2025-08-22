@@ -75,6 +75,9 @@ function renderQuestion() {
     btn.onclick = () => selectAnswer(idx);
     optionsDiv.appendChild(btn);
   });
+  
+  // 隐藏"下一题"按钮
+  hideNextButton();
 }
 
 function selectAnswer(idx) {
@@ -131,7 +134,28 @@ function finishQuestion() {
     }
   });
 
-  setTimeout(nextQuestion, 1000);
+  // 显示"下一题"按钮
+  showNextButton();
+}
+
+function showNextButton() {
+  let nextBtn = document.getElementById('next-btn');
+  if (!nextBtn) {
+    nextBtn = document.createElement('button');
+    nextBtn.id = 'next-btn';
+    nextBtn.textContent = '下一题';
+    nextBtn.className = 'next-button';
+    nextBtn.onclick = nextQuestion;
+    document.getElementById('game').appendChild(nextBtn);
+  }
+  nextBtn.style.display = 'block';
+}
+
+function hideNextButton() {
+  const nextBtn = document.getElementById('next-btn');
+  if (nextBtn) {
+    nextBtn.style.display = 'none';
+  }
 }
 
 function endGame() {

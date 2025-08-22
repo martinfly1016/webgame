@@ -78,11 +78,17 @@ function renderQuestion() {
 }
 
 function selectAnswer(idx) {
-  if (selected !== null) return;
+  // 如果已经选择了答案，先清除之前的选择
+  if (selected !== null) {
+    const buttons = document.querySelectorAll('#options button');
+    buttons.forEach((btn, i) => {
+      btn.classList.remove('selected');
+    });
+  }
+  
   selected = idx;
   const buttons = document.querySelectorAll('#options button');
   buttons.forEach((btn, i) => {
-    btn.disabled = true;
     if (i === idx) btn.classList.add('selected');
   });
 }
@@ -104,6 +110,11 @@ function startTimer() {
 function finishQuestion() {
   const feedback = document.getElementById('feedback');
   const buttons = document.querySelectorAll('#options button');
+
+  // 禁用所有按钮，防止在显示结果时继续选择
+  buttons.forEach(btn => {
+    btn.disabled = true;
+  });
 
   if (selected === question.correct) {
     score += 10;

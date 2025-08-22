@@ -168,12 +168,19 @@ function finishQuestion() {
     btn.disabled = true;
   });
 
-  if (selected === question.correct) {
+  if (selected === null) {
+    // 用户没有选择，显示超时
+    feedback.textContent = '回答超时！';
+  } else if (selected === question.correct) {
+    // 用户选择正确
     score += 10;
     feedback.textContent = '回答正确！';
   } else {
+    // 用户选择错误
     feedback.textContent = '回答错误！';
   }
+  
+  // 显示正确答案和用户错误选择的视觉反馈
   buttons.forEach((btn, i) => {
     if (i === question.correct) {
       btn.classList.add('correct');

@@ -26,11 +26,11 @@ body {
 
 /* 页面容器 */
 .page {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh; /* 允许内容超出视口 */
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;

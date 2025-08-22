@@ -32,6 +32,8 @@ function nextQuestion() {
     return;
   }
   current++;
+  document.getElementById('progress').textContent = `${current}/${totalQuestions}`;
+
   question = generateQuestion();
   renderQuestion();
   startTimer();
@@ -78,6 +80,11 @@ function renderQuestion() {
 function selectAnswer(idx) {
   if (selected !== null) return;
   selected = idx;
+  const buttons = document.querySelectorAll('#options button');
+  buttons.forEach((btn, i) => {
+    btn.disabled = true;
+    if (i === idx) btn.classList.add('selected');
+  });
 }
 
 function startTimer() {
@@ -96,12 +103,23 @@ function startTimer() {
 
 function finishQuestion() {
   const feedback = document.getElementById('feedback');
+  const buttons = document.querySelectorAll('#options button');
+
   if (selected === question.correct) {
     score += 10;
     feedback.textContent = 'Correct!';
   } else {
     feedback.textContent = 'Wrong!';
   }
+  buttons.forEach((btn, i) => {
+    if (i === question.correct) {
+      btn.classList.add('correct');
+    }
+    if (selected !== null && i === selected && selected !== question.correct) {
+      btn.classList.add('wrong');
+    }
+  });
+
   setTimeout(nextQuestion, 1000);
 }
 

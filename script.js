@@ -7,6 +7,8 @@ let timer = null;
 let timeLeft = 10;
 let question = null;
 const totalQuestions = 10;
+let audioCtx = null;
+let questionAnswered = false;
 
 async function init() {
   const sRes = await fetch('stations.json');
@@ -15,7 +17,28 @@ async function init() {
   lines = await lRes.json();
 }
 
+function playTickSound() {
+  if (!audioCtx) return;
+  const oscillator = audioCtx.createOscillator();
+  const gainNode = audioCtx.createGain();
+
+  oscillator.connect(gainNode);
+  gainNode.connect(audioCtx.destination);
+
+  oscillator.type = 'sine';
+  oscillator.frequency.setValueAtTime(880, audioCtx.currentTime);
+  gainNode.gain.setValueAtTime(0.5, audioCtx.currentTime);
+
+  gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+
+  oscillator.start(audioCtx.currentTime);
+  oscillator.stop(audioCtx.currentTime + 0.05);
+}
+
 function startGame() {
+  if (!audioCtx) {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  }
   document.getElementById('start-screen').classList.add('hidden');
   document.getElementById('end-screen').classList.add('hidden');
   document.getElementById('game').classList.remove('hidden');
@@ -26,6 +49,7 @@ function startGame() {
 
 function nextQuestion() {
   selected = null;
+  questionAnswered = false;
   document.getElementById('feedback').textContent = '';
   if (current >= totalQuestions) {
     endGame();
@@ -130,18 +154,14 @@ function renderQuestion() {
 }
 
 function selectAnswer(idx) {
-  // 如果已经选择了答案，先清除之前的选择
-  if (selected !== null) {
-    const buttons = document.querySelectorAll('.option-btn');
-    buttons.forEach((btn, i) => {
-      btn.classList.remove('selected');
-    });
-  }
-  
+  if (questionAnswered) return;
+  questionAnswered = true;
+
   selected = idx;
   const buttons = document.querySelectorAll('.option-btn');
   buttons.forEach((btn, i) => {
     if (i === idx) btn.classList.add('selected');
+    btn.disabled = true;
   });
 }
 
@@ -149,12 +169,16 @@ function startTimer() {
   timeLeft = 10;
   document.getElementById('timer').textContent = timeLeft;
   if (timer) clearInterval(timer);
+
+  playTickSound();
   timer = setInterval(() => {
     timeLeft--;
     document.getElementById('timer').textContent = timeLeft;
     if (timeLeft <= 0) {
       clearInterval(timer);
       finishQuestion();
+    } else {
+      playTickSound();
     }
   }, 1000);
 }
@@ -163,24 +187,19 @@ function finishQuestion() {
   const feedback = document.getElementById('feedback');
   const buttons = document.querySelectorAll('.option-btn');
 
-  // 禁用所有按钮，防止在显示结果时继续选择
   buttons.forEach(btn => {
     btn.disabled = true;
   });
 
   if (selected === null) {
-    // 用户没有选择，显示超时
     feedback.textContent = '回答超时！';
   } else if (selected === question.correct) {
-    // 用户选择正确
     score += 10;
     feedback.textContent = '回答正确！';
   } else {
-    // 用户选择错误
     feedback.textContent = '回答错误！';
   }
   
-  // 显示正确答案和用户错误选择的视觉反馈
   buttons.forEach((btn, i) => {
     if (i === question.correct) {
       btn.classList.add('correct');
@@ -190,7 +209,6 @@ function finishQuestion() {
     }
   });
 
-  // 显示"下一题"按钮
   showNextButton();
 }
 
